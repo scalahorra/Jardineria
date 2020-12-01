@@ -4,7 +4,7 @@ import java.util.*;
 
 import modelo.Pedido;
 
-public class PedidoDao implements Dao<Pedido>{
+public class PedidoDao implements DAO<Pedido>{
 	
 	private List<Pedido> pedidos = new ArrayList<>();
 	

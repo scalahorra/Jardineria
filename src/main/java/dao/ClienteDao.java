@@ -5,7 +5,7 @@ import java.util.Optional;
 
 import modelo.Cliente;
 
-public class ClienteDao implements Dao<Cliente>{
+public class ClienteDao implements DAO<Cliente>{
 
 	private List<Cliente> clientes = new ArrayList<>();
 	
