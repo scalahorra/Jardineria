@@ -5,16 +5,21 @@ import java.util.*;
 public class Pedido {
 
 	private Integer codigoPedido;
-	private Date fechaPedido;
-	private Date fechaEsperada;
-	private Date fechaEntrega;
+	private Calendar fechaPedido;
+	private Calendar fechaEsperada;
+	private Calendar fechaEntrega;
 	private String estado;
 	private String comentario;
 	
 	
-	public Pedido() {
+	public Pedido(Integer codigoPedido, String estado, Calendar fechaPedido, Calendar fechaEsperada) {
 		
+		this.codigoPedido = codigoPedido;
+		this.estado = estado;
+		this.fechaPedido = fechaPedido;
+		this.fechaEsperada = fechaEsperada;
 	}
+	
 
 	public Integer getCodigoPedido() {
 		return codigoPedido;
@@ -23,24 +28,24 @@ public class Pedido {
 		this.codigoPedido = codigoPedido;
 	}
 
-	public Date getFechaPedido() {
+	public Calendar getFechaPedido() {
 		return fechaPedido;
 	}
-	public void setFechaPedido(Date fechaPedido) {
+	public void setFechaPedido(Calendar fechaPedido) {
 		this.fechaPedido = fechaPedido;
 	}
 
-	public Date getFechaEsperada() {
+	public Calendar getFechaEsperada() {
 		return fechaEsperada;
 	}
-	public void setFechaEsperada(Date fechaEsperada) {
+	public void setFechaEsperada(Calendar fechaEsperada) {
 		this.fechaEsperada = fechaEsperada;
 	}
 
-	public Date getFechaEntrega() {
+	public Calendar getFechaEntrega() {
 		return fechaEntrega;
 	}
-	public void setFechaEntrega(Date fechaEntrega) {
+	public void setFechaEntrega(Calendar fechaEntrega) {
 		this.fechaEntrega = fechaEntrega;
 	}
 
